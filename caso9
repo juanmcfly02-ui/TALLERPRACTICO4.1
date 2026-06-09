@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double matricula = 2500000;
+
+        double descuento = matricula * 0.15;
+
+        double total = matricula - descuento;
+
+        double totalFinal = Math.Ceiling(total);
+
+        Console.WriteLine($"Costo base: {matricula:C}");
+        Console.WriteLine($"Descuento: {descuento:C}");
+        Console.WriteLine($"Valor final: {totalFinal:C}");
+    }
+}

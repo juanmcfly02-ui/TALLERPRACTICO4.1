@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string entorno = "Produccion";
+        string proyecto = "SistemaAcademico";
+
+        Random random = new Random();
+
+        int servidor1 = random.Next(100, 999);
+        int servidor2 = random.Next(100, 999);
+
+        int mayor = Math.Max(servidor1, servidor2);
+
+        string ultimosTres = proyecto.Substring(proyecto.Length - 3);
+
+        string token = $"{entorno[0]}{mayor}{ultimosTres}".ToUpper();
+
+        Console.WriteLine("Servidor 1: " + servidor1);
+        Console.WriteLine("Servidor 2: " + servidor2);
+        Console.WriteLine("Token generado: " + token);
+    }
+}

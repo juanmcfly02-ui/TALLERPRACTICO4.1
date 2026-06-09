@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string correo = "auraale21@gmail.com";
+
+        int posicionArroba = correo.IndexOf("@");
+
+        string usuario = correo.Substring(0, posicionArroba);
+
+        string dominio = correo.Substring(posicionArroba + 1);
+
+        Console.WriteLine("Usuario: " + usuario);
+        Console.WriteLine("Dominio: " + dominio);
+    }
+}

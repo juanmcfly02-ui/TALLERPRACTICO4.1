@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string servidor = "SeRvErProduccion";
+
+        string servidorNormalizado = servidor.ToLower();
+
+        Console.WriteLine("Servidor normalizado: " + servidorNormalizado);
+        Console.WriteLine("Longitud: " + servidorNormalizado.Length);
+
+        if (servidorNormalizado.Length > 15)
+        {
+            Console.WriteLine("El nombre excede los 15 caracteres.");
+        }
+    }
+}

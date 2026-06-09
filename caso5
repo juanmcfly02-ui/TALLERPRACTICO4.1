@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nombre = "Carlos";
+        string apellido = "Perez";
+
+        string correo1 = nombre + "." + apellido + "@institucion.edu";
+
+        string correo2 = string.Concat(nombre, ".", apellido, "@institucion.edu");
+
+        Console.WriteLine("Correo con + : " + correo1);
+        Console.WriteLine("Correo con Concat: " + correo2);
+    }
+}

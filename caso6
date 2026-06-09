@@ -1,0 +1,13 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string ip = "192.168.1.10";
+        int puerto = 8080;
+        string estado = "Activo";
+
+        Console.WriteLine($"IP: {ip} | Puerto: {puerto} | Estado: {estado}");
+    }
+}

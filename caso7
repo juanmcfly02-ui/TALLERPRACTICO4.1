@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nombre = "Maria";
+        string apellido = "Gomez";
+
+        char inicialNombre = nombre[0];
+        char inicialApellido = apellido[0];
+
+        Console.WriteLine($"Avatar: {inicialNombre}{inicialApellido}");
+    }
+}
